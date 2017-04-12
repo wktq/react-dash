@@ -42,7 +42,7 @@ const TablePage = () => {
   };
 
   return (
-    <PageBase title="Table Page"
+    <PageBase title="ユーザー一覧"
               navigation="Application / Table Page">
 
       <div>
@@ -55,10 +55,10 @@ const TablePage = () => {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHeaderColumn style={styles.columns.id}>ID</TableHeaderColumn>
-              <TableHeaderColumn style={styles.columns.name}>Name</TableHeaderColumn>
-              <TableHeaderColumn style={styles.columns.price}>Price</TableHeaderColumn>
-              <TableHeaderColumn style={styles.columns.category}>Category</TableHeaderColumn>
+              <TableHeaderColumn style={styles.columns.id}>ユーザーID</TableHeaderColumn>
+              <TableHeaderColumn style={styles.columns.name}>名前</TableHeaderColumn>
+              <TableHeaderColumn style={styles.columns.price}>実績件数</TableHeaderColumn>
+              <TableHeaderColumn style={styles.columns.category}>職種</TableHeaderColumn>
               <TableHeaderColumn style={styles.columns.edit}>Edit</TableHeaderColumn>
             </TableRow>
           </TableHeader>
@@ -82,7 +82,7 @@ const TablePage = () => {
               </TableRow>
             )}
           </TableBody>
-        </Table>    
+        </Table>
       </div>
     </PageBase>
   );

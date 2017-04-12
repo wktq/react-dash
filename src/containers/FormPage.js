@@ -32,33 +32,36 @@ const FormPage = () => {
   };
 
   return (
-    <PageBase title="Form Page"
+    <PageBase title="通知作成フォーム"
               navigation="Application / Form Page">
       <form>
 
         <TextField
-          hintText="Name"
-          floatingLabelText="Name"
+          hintText="タイトルを入力（○文字以内推奨）"
+          floatingLabelText="タイトル"
           fullWidth={true}
         />
 
         <SelectField
-          floatingLabelText="City"
+          floatingLabelText="対象ユーザー"
           value=""
           fullWidth={true}>
-          <MenuItem key={0} primaryText="London"/>
-          <MenuItem key={1} primaryText="Paris"/>
-          <MenuItem key={2} primaryText="Rome"/>
+          <MenuItem key={0} primaryText="グループA"/>
+          <MenuItem key={1} primaryText="グループB"/>
+          <MenuItem key={2} primaryText="グループC"/>
         </SelectField>
 
         <DatePicker
-          hintText="Expiration Date"
-          floatingLabelText="Expiration Date"
+          hintText="配信日"
+          floatingLabelText="配信日"
+          okLabel="OK"
+          cancelLabel="キャンセル"
+          locale="ja"
           fullWidth={true}/>
 
         <div style={styles.toggleDiv}>
           <Toggle
-            label="Disabled"
+            label="音を鳴らす"
             labelStyle={styles.toggleLabel}
           />
         </div>
@@ -67,10 +70,10 @@ const FormPage = () => {
 
         <div style={styles.buttons}>
           <Link to="/">
-            <RaisedButton label="Cancel"/>
+            <RaisedButton label="リセット"/>
           </Link>
 
-          <RaisedButton label="Save"
+          <RaisedButton label="保存"
                         style={styles.saveButton}
                         type="submit"
                         primary={true}/>

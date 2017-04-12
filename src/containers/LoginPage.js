@@ -10,6 +10,7 @@ import Help from 'material-ui/svg-icons/action/help';
 import TextField from 'material-ui/TextField';
 import {Link} from 'react-router';
 import ThemeDefault from '../theme-default';
+import FontIcon from 'material-ui/FontIcon';
 
 const LoginPage = () => {
 
@@ -23,6 +24,11 @@ const LoginPage = () => {
       left: 0,
       right: 0,
       margin: 'auto'
+    },
+    formHeading: {
+      fontSize: 14,
+      color: 'grey',
+      textAlign: 'center'
     },
     paper: {
       padding: 20,
@@ -79,30 +85,32 @@ const LoginPage = () => {
 
           <Paper style={styles.paper}>
 
-            <form>
+            <form style={styles.formHeading}>
+              <p>CAST Adminにログイン</p>
               <TextField
-                hintText="E-mail"
-                floatingLabelText="E-mail"
+                hintText="メールアドレスを入力してください"
+                floatingLabelText="メールアドレス"
                 fullWidth={true}
               />
               <TextField
-                hintText="Password"
-                floatingLabelText="Password"
+                hintText="パスワードを入力してください"
+                floatingLabelText="パスワード"
                 fullWidth={true}
                 type="password"
               />
 
               <div>
                 <Checkbox
-                  label="Remember me"
+                  label="ログインを記憶"
                   style={styles.checkRemember.style}
                   labelStyle={styles.checkRemember.labelStyle}
                   iconStyle={styles.checkRemember.iconStyle}
                 />
 
                 <Link to="/">
-                  <RaisedButton label="Login"
+                  <RaisedButton label="ログイン"
                                 primary={true}
+                                icon={<FontIcon className="muidocs-icon-custom-github" />}
                                 style={styles.loginBtn}/>
                 </Link>
               </div>

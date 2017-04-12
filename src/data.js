@@ -10,21 +10,28 @@ import ChevronRight from 'material-ui/svg-icons/navigation/chevron-right';
 
 const data = {
   menus: [
-    { text: 'DashBoard', icon: <Assessment/>, link: '/dashboard' },
-    { text: 'Form Page', icon: <Web/>, link: '/form' },
-    { text: 'Table Page', icon: <GridOn/>, link: '/table' },
-    { text: 'Login Page', icon: <PermIdentity/>, link: '/login' }
+    { text: 'ダッシュボード', icon: <Assessment/>, link: '/dashboard' },
+    { text: '通知作成', icon: <Web/>, link: '/form' },
+    { text: 'ユーザー一覧', icon: <GridOn/>, link: '/table' },
+    { text: 'ログイン', icon: <PermIdentity/>, link: '/login' }
   ],
   tablePage: {
     items: [
-      {id: 1, name: 'Product 1', price: '$50.00', category: 'Category 1'},
-      {id: 2, name: 'Product 2', price: '$150.00', category: 'Category 2'},
-      {id: 3, name: 'Product 3', price: '$250.00', category: 'Category 3'},
-      {id: 4, name: 'Product 4', price: '$70.00', category: 'Category 4'},
-      {id: 5, name: 'Product 5', price: '$450.00', category: 'Category 5'},
-      {id: 6, name: 'Product 6', price: '$950.00', category: 'Category 6'},
-      {id: 7, name: 'Product 7', price: '$550.00', category: 'Category 7'},
-      {id: 8, name: 'Product 8', price: '$750.00', category: 'Category 8'}
+      {id: 1, name: '田中みよこ', price: '15', category: '女性モデル'},
+      {id: 2, name: '松原さちえ', price: '0', category: '男性モデル'},
+      {id: 3, name: '遠藤ほまれ', price: '0', category: '女性モデル'},
+      {id: 4, name: '芥川龍子', price: '7', category: 'フォトグラファー'},
+      {id: 5, name: '恵比寿よしこ', price: '5', category: '女性モデル'},
+      {id: 6, name: '高橋ようこ', price: '95', category: '女性モデル'},
+      {id: 7, name: '斎藤たいこ', price: '55', category: 'ディレクター'},
+      {id: 8, name: '田中みよこ', price: '15', category: '女性モデル'},
+      {id: 9, name: '松原さちえ', price: '0', category: '男性モデル'},
+      {id: 10, name: '遠藤ほまれ', price: '0', category: '女性モデル'},
+      {id: 11, name: '芥川龍子', price: '7', category: 'フォトグラファー'},
+      {id: 12, name: '恵比寿よしこ', price: '5', category: '女性モデル'},
+      {id: 13, name: '高橋ようこ', price: '95', category: '女性モデル'},
+      {id: 14, name: '斎藤たいこ', price: '55', category: 'ディレクター'},
+      {id: 15, name: '中森明子', price: '7', category: '女性モデル'}
     ]
   },
   dashBoardPage: {

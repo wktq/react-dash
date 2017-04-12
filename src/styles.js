@@ -10,9 +10,9 @@ const styles = {
     display: 'block'
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: typography.fontWeightLight,
-    marginBottom: 20
+    margin: '8px'
   },
   paper: {
     padding: 30

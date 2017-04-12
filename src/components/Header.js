@@ -22,7 +22,7 @@ class Header extends React.Component {
         maxHeight: 57
       },
       menuButton: {
-        marginLeft: 10
+        marginLeft: 20
       },
       iconsRightContainer: {
         marginLeft: 20

@@ -17,8 +17,9 @@ const LeftDrawer = (props) => {
       lineHeight: `${spacing.desktopKeylineIncrement}px`,
       fontWeight: typography.fontWeightLight,
       backgroundColor: blue600,
-      paddingLeft: 40,
+      paddingLeft: 24,
       height: 56,
+      fontWeight: 500
     },
     menuItem: {
       color: white,
@@ -51,7 +52,8 @@ const LeftDrawer = (props) => {
       docked={true}
       open={navDrawerOpen}>
         <div style={styles.logo}>
-          Material Admin
+          <i className="fa fa-cogs fa-lg"/>
+          &nbsp;&nbsp;&nbsp;Cast Admin
         </div>
         <div style={styles.avatar.div}>
           <Avatar src="http://www.material-ui.com/images/uxceo-128.jpg"
@@ -60,6 +62,7 @@ const LeftDrawer = (props) => {
           <span style={styles.avatar.span}>{props.username}</span>
         </div>
         <div>
+          <p></p>
           {props.menus.map((menu, index) =>
             <MenuItem
               key={index}

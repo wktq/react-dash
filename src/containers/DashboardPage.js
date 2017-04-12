@@ -53,17 +53,7 @@ const DashboardPage = () => {
           />
         </div>
       </div>
-
-      <div className="row">
-        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-md m-b-15">
-          <NewOrders data={Data.dashBoardPage.newOrders}/>
-        </div>
-
-        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 m-b-15">
-          <MonthlySales data={Data.dashBoardPage.monthlySales}/>
-        </div>
-      </div>
-
+      
       <div className="row">
         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-b-15 ">
           <RecentlyProducts data={Data.dashBoardPage.recentProducts}/>

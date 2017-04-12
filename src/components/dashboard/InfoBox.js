@@ -21,9 +21,10 @@ class InfoBox extends React.Component {
         color: grey800
       },
       text: {
-        fontSize: 20,
+        fontSize: 16,
         fontWeight: typography.fontWeightLight,
-        color: grey800
+        color: grey800,
+        fontWeight: 500
       },
       iconSpan: {
         float: 'left',
@@ -37,7 +38,6 @@ class InfoBox extends React.Component {
         width: 48,
         marginTop: 20,
         maxWidth: '100%'
-
       }
     };
 

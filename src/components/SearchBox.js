@@ -19,11 +19,11 @@ const SearchBox = () => {
     },
     inputStyle: {
       color: white,
-      paddingLeft: 5
+      paddingLeft: 16
     },
     hintStyle: {
       height: 16,
-      paddingLeft: 5,
+      paddingLeft: 20,
       color: white
     }
   };
@@ -34,7 +34,7 @@ const SearchBox = () => {
         <Search color={white} />
       </IconButton>
       <TextField
-        hintText="Search..."
+        hintText="ユーザー検索"
         underlineShow={false}
         fullWidth={true}
         style={styles.textField}
